@@ -1,0 +1,83 @@
+@import '../../styles/fonts.scss';
+@import '../../styles/variables.scss';
+
+.navbar_container {
+    margin:0;
+    padding: 0em 0.3em;
+    max-height: fit-content;
+    max-width: 100%;
+    position: fixed top;
+    display: flex;
+    flex-direction: row;
+    gap: 0.25em;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $black;
+    border-bottom: 3px solid white;
+    
+    @include sm {
+        flex-flow: column wrap;
+        padding: 0em 0.1em 0.5em 0.1em;
+    }
+    
+    .logo {
+        flex:1;
+        display: flex;
+        justify-content: center;
+        
+        img {
+            width: 6.25em;
+            height: 7em;
+    
+            @include sm {
+                width: 6em;
+                height: 5em;
+            }
+        }
+    }
+    
+    .secondSection {
+        flex: 5;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        align-items: center;
+        
+        @include lg {
+            button {
+                font-size: 1em;
+            }
+        }
+
+        @include md {
+            button {
+                font-size: 1em
+            }
+        }
+
+        @include sm {
+            width: 100%;
+            button {
+                font-size: 0.9em;
+            }
+        }
+        
+        #button {
+            font-family: $playregular;
+            background-color: $black;
+            border: 2px solid;
+            color: $aux-color-3;
+            margin: 0.2em;
+            padding: 0.4em;
+            font-size: 1.5em;
+            border-radius: 0.5em;
+            
+            &:hover {
+                border-color: $hover-color1;
+                color: $hover-color1;
+            }
+        }
+        
+        
+    }
+}

@@ -1,0 +1,29 @@
+@import '../../styles/variables.scss';
+@import '../../styles/wallpapers.scss';
+
+.errorPage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw; /* Ancho completo de la ventana */
+    height: 100vh; /* Altura completa de la ventana */
+    background-image: $background-error; /* Ruta a tu imagen de fondo */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    font-weight: bolder;
+    font-size: 1.8em;
+}
+
+h5 {
+    font-size: 3em;
+}
+
+button {
+    
+    &:hover {
+        background-color: $black;
+    }
+}

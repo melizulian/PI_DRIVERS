@@ -1,0 +1,173 @@
+@import '../../styles/fonts.scss';
+@import '../../styles/variables.scss';
+@import '../../styles/wallpapers.scss';
+
+.card_container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    justify-items: space-evenly;
+    align-items: center;
+    text-align: center;
+    padding: 1em;
+    margin: 0.3em;
+    width: 25em;
+    height: 30em;
+    border-radius: 1em;
+    background-image: $background-landing;
+    box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.5); // Borde brillante y degradado
+
+    &:hover {
+        box-shadow: 0 0 20px 10px rgba(255, 255, 255, 0.7); // Aumenta el brillo al pasar el cursor
+    }
+
+    @include lg {
+        width: 25em;
+        height: 35em;
+        
+    }
+
+    @include md {
+        width: 18em;
+        height: 28em;
+    }
+
+    @include sm {
+        width: 10em;
+        height: 20em;
+    }
+    
+    &:hover {
+        background-color: $white;
+        color: $hover-color2;
+        border-color: $aux-color-3;
+    }
+    
+    #name_wrapper {
+        display: flex;
+        text-shadow: 2px 2px 2px black;
+        justify-content:space-evenly;
+        align-items: center;
+        text-align: center;
+        margin: 0.3em;
+        padding: 0.3em;
+
+        h2 {
+            padding:0;
+            margin:0;
+            font-size: 2em;
+            
+    
+            @include lg {
+                font-size: 2em;
+            }
+    
+            @include md {
+                font-size: 1.9em;
+            }
+    
+            @include sm {
+                font-size: 1.5em;
+            }
+        }
+    }
+
+    .info_container {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content:space-evenly;
+        align-items: center;
+        text-align: center;
+        margin: auto;
+        padding: 0.3em;
+        column-gap: 1em;
+
+        @include md {
+            flex-flow: column wrap;
+        }
+
+        @include sm {
+            flex-flow: column wrap;
+        }
+
+        img {
+            height: 12em;
+            width: 13em;
+            border-radius: 50%;
+            border: 3px solid $white;
+            
+
+            @include lg {
+                height: 10em;
+                width: 10em;
+            }
+
+            @include md {
+                height: 8em;
+                width: 8em;
+            }
+
+            @include sm {
+                height: 7em;
+                width: 7em;
+            }
+        }
+
+        h3 {
+            color: $white;
+            text-shadow: 2px 2px 2px black;
+
+        }
+        
+        #teams_wrapper {
+            display: flex;
+            justify-content:space-evenly;
+            align-items: center;
+            text-align: center;
+            padding: 0.3em;
+            flex-wrap: wrap;
+            margin: 0 auto;
+            
+            @include md {
+                display: flex;
+                flex-flow: row wrap;
+                justify-items: space-evenly;
+            }
+            
+            @include sm {
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: space-evenly;
+            }
+            
+            h4 {
+                color: $white;
+                background-color: $background-container-color;
+                border-radius: 1em;
+                padding: 0.3em;
+                font-size: 1em;
+        
+                @include lg {
+                    font-size: 1.5em;
+                }
+        
+                @include md {
+                    font-size: 1.2em;
+                }
+        
+                @include sm {
+                    font-size: 1em;
+                }
+
+            }
+        }
+    }
+
+}
+
+

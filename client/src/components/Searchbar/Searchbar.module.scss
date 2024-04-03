@@ -1,0 +1,65 @@
+@import '../../styles/fonts.scss';
+@import '../../styles/variables.scss';
+
+.searchbar_container {
+    display: flex;
+    align-items: center;
+    padding-left: 0.6em;
+    padding-right: 0.2em;
+    margin: 0.2em;
+
+    
+    input {
+        height: 2em;
+        width: 20em;
+        font-size: 1.15em;
+        border: none;
+        border-radius: 0.5em;
+        background-color: $white;
+        font-family: $playregular;
+        font-weight: bold;
+        text-align: start;
+        padding-left: 1em;
+        margin: 0.2em;
+        color: $black;
+
+        @include lg {
+            height: 1.3em;
+            width: 13em;
+            font-size: 1em;
+        }
+
+        @include md {
+            height: 1.1em;
+            width: 10em;
+            font-size: 0.9em;
+        }
+
+        @include sm {
+            height: 0.9em;
+            width: 10em;
+            font-size: 0.8em;
+        }
+    }
+
+    .search_button {
+        font-family: $playregular;
+        margin: 0.2em;
+        padding: 0.4em;
+        border: none;
+        background-color: $black;
+        border: 2px solid;
+        color: $aux-color-3;
+        border-radius: 0.5em;
+        font-size: 1.5em;
+
+        @include lg {
+            font-size: 1.5em;
+        }
+        
+        &:hover {
+            border-color: $hover-color1;
+            color: $hover-color1;
+        }
+    }
+}

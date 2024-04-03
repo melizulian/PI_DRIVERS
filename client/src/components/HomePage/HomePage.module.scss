@@ -1,0 +1,128 @@
+@import '../../styles/fonts.scss';
+@import '../../styles/variables.scss';
+@import '../../styles/wallpapers.scss';
+
+
+.home_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: $background-image;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+
+  .filters_and_sort {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 2rem;
+
+    .f_s_wrapper {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 1rem;
+
+      h4 {
+        color: $white;
+        background-color: none;
+        text-shadow: 2px 2px 2px black;
+        border-radius: 0.5em;
+        padding: 0.3em;
+        margin-bottom: 0.5em;
+      }
+
+      label {
+        display: flex;
+        align-items: center;
+        font-weight: bold;
+        background-color: $background-container-color3;
+        border-radius: 0.3em;
+        color: $white;
+        margin-bottom: 0.5em;
+        padding: 0.4em;
+
+        select {
+          font-family: $playregular;
+          color: $white;
+          border: 2px solid transparent;
+          font-size: 1em;
+          text-align: center;
+          margin: 0.5em 0.5em 0.5em 0.8em;
+          padding: 0.3em;
+          width: 8em;
+          cursor: pointer;
+          
+          
+
+          background-color: $background-container-color3;
+          border-radius: 0.3em;
+
+          &:hover {
+            color: $hover-color2;
+          }
+
+          option {
+            background-color: $background-container-color3;
+            color: $black;
+            font-size: 1em;
+            cursor: pointer;
+          }
+        }
+        
+      }
+    }
+  }
+
+  .pagination_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1em;
+
+    button {
+      &:hover {
+        background-color: $black;
+      }
+    }
+
+    span {
+      color: $white;
+      font-size: 1.5em;
+      font-weight: bold;
+      margin: 0.3em;
+      border: 2px solid transparent;
+      cursor: pointer;
+
+      &:hover {
+        color: $button-text-color;
+        font-size: 1.5em;
+      }
+
+      &:active {
+        color: $button-text-color;
+      }
+    }
+  }
+
+  .nav_buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.3em;
+    padding: 0.3em;
+
+    button {
+      background-color: $background-container-color;
+      border-color: $button-border-color;
+
+      &:hover {
+        background-color: $black;
+      }
+    }
+  }
+}

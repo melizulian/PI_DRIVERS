@@ -1,0 +1,389 @@
+@import '../../styles/fonts.scss';
+@import '../../styles/variables.scss';
+@import '../../styles/wallpapers.scss';
+
+.about_container {
+    border: 2px solid $black;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    font-family: $futura;
+    max-width: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: space-around;
+    background-image: $background-image;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    color: $black;
+    font-weight: bolder;
+    font-size: 1.8em;
+    text-shadow: 2px 2px 2px black;
+
+    .aboutMe {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    h2 {
+        color: $white;
+        font-family: $playregular;
+        font-weight: bold;
+        text-shadow: 2px 2px 2px $button-border-color;
+
+        @include lg {
+            font-size: 1.5em;
+        }
+
+        @include md {
+            font-size: 0.9em;
+        }
+
+        @include sm {
+            font-size: 0.8em;
+        }
+    }
+
+
+    h5 {
+        font-family: $playregular;
+        font-weight: bolder;
+        font-size: 1.3em;
+        text-align: center;
+        margin: 0.3em;
+        padding: 0.2em;
+        color: $white;
+        margin-bottom: 10px;
+        text-shadow: 2px 2px 2px black;
+
+        @include lg {
+            font-size: 1.1em;
+        }
+
+        @include md {
+        font-size: 0.9em;
+        }
+
+        @include sm {
+        font-size: 0.8em;
+        }
+    }
+
+    .text{
+        order: 1;
+        flex: 1;
+        
+    }
+
+    #profilePic {
+        align-items: center;
+        justify-content: center;
+        height: 15em;
+        width: 15em;
+        border-radius: 50%;
+        margin-left: auto;
+        margin-right: 20px;
+        margin: 0.2em;
+        padding: 0.1em;
+        order: 2;
+
+        @include md {
+            height: 12em;
+            width: 12em;
+        }
+        @include sm {
+            height: 10em;
+            width: 10em;
+        }
+    }
+
+      .logos {
+        display: flex; 
+        gap: 1em; 
+        align-items: center; 
+        background-color: $white;
+      }
+
+    div {
+        display: flex;
+        flex-flow: row wrap;
+        gap: 1em;
+        height: fit-content;
+        padding: 0.5em;
+        margin: 0.5em;
+        justify-content: space-evenly;
+        align-items: center;
+        background-color: $background-container-color2;
+        border-radius: 1em;
+
+    .links_container{
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+        justify-content: center; 
+        text-align: center;
+    }
+        
+        .myLinks {
+            height: 6em;
+            width: 6em;
+            border-radius: 0.5em;
+            background-color: $background-container-color3;
+
+            &:hover {
+                background-color: $aux-color-6;
+            }
+
+            &:active {
+                background-color: $aux-color-3;
+            }
+
+            @include lg {
+                height: 4em;
+                width: 4em;
+            }
+
+            @include md {
+                height: 3em;
+                width: 3em;
+            }
+
+            @include sm {
+                height: 2em;
+                width: 2em;
+            }
+        }
+
+        #logo_1 {
+            height: 2.3em;
+            width: 2.5em;
+
+            @include lg {
+                height: 2.27em;
+                width: 2.2em;
+            }
+            
+            @include md {
+                height: 1.87em;
+                width: 1.9em;
+            }
+
+            @include sm {
+                height: 1.87em;
+                width: 1.9em;
+            }
+        }
+
+        #logo_2 {
+            height: 2.3em;
+            width: 2.5em;
+
+            @include lg {
+                height: 2.27em;
+                width: 2.2em;
+            }
+            
+            @include md {
+                height: 1.87em;
+                width: 1.9em;
+            }
+
+            @include sm {
+                height: 1.87em;
+                width: 1.9em;
+            }
+        }
+
+        #logo_3 {
+            height: 2.3em;
+            width: 2.2em;
+
+            @include lg {
+                height: 2.27em;
+                width: 1.9em;
+            }
+
+            @include md {
+                height:1.87em;
+                width:1.5em;
+            }
+
+            @include sm {
+                height:1.87em;
+                width:1.5em;
+            }
+        }
+
+        #logo_4 {
+            height: 2.3em;
+            width: 3.2em;
+
+            @include lg {
+                height: 2.27em;
+                width: 2.9em;
+            }
+
+            @include md {
+                height: 1.87em;
+                width: 2.5em;
+            }
+
+            @include sm {
+                height: 1.87em;
+                width: 2.5em;
+            }
+        }
+
+        #logo_5 {
+            height: 2.3em;
+            width: 2.6em;
+            
+            @include lg {
+                height: 2.27em;
+                width: 2.3em;
+            }
+
+            @include md {
+                height: 1.87em;
+                width: 1.9em;
+            }
+
+            @include sm {
+                height: 1.87em;
+                width: 1.9em;
+            }
+        }
+
+        #logo_6 {
+            height: 2.3em;
+            width: 5.9em;
+
+            @include lg {
+                height: 2em;
+                width: 5.6em;
+            }
+
+            @include md {
+                height: 1.6em;;
+                width: 5.2em;
+            }
+
+            @include sm {
+                height: 1.6em;;
+                width: 5.2em;
+            }
+        }
+
+        #logo_7 {
+            height: 2.3em;
+            width: 4.2em;
+            
+            @include lg {
+                height: 2.27em;
+                width: 3.9em;
+            }
+
+            @include md {
+                height: 1.87em;
+                width: 3.5em;
+            }
+
+            @include sm {
+                height: 1.87em;
+                width: 3.5em;
+            }
+        }
+
+        #logo_8{
+            height: 2.5em;
+            width: 5.45em;
+
+            @include lg {
+                height: 2.2em;
+                width: 5.15em;
+            }
+
+            @include md {
+                height: 1.8em;
+                width: 4.75em;
+            }
+
+            @include sm {
+                height: 1.8em;
+                width: 4.75em;
+            }
+        }
+
+        #logo_9 {
+            height: 5.7em;
+            width: 6em;
+
+            @include lg {
+                height: 5.4em;
+                width: 5.7em;
+            }
+
+            @include md {
+                height: 5em;
+                width: 5.3em;
+            }
+
+            @include sm {
+                height: 5em;
+                width: 5.3em;
+            }
+        }
+
+        #logo_10 {
+            height: 3.2em;
+            width: 6em;
+
+            @include lg {
+                height: 2.9em;
+                width: 5.7em;
+            }
+
+            @include md {
+                height: 2.5em;
+                width: 5.3em;    
+            }
+
+            @include sm {
+                height: 2.5em;
+                width: 5.3em;    
+            }
+        }
+    }
+
+    p {
+        font-family: $playregular;
+        font-size: 0.75em;
+        margin:auto;
+        padding: 1em;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        color: $white;
+        background-color: $background-container-color;
+        border-radius: 1em;
+        text-shadow: 2px 2px 2px black;
+
+        @include lg {
+            font-size: .75em;
+        }
+
+        @include md {
+            font-size: 0.6em;;
+        }
+
+        @include sm {
+            font-size: 0.5em;
+        }
+    }
+    
+}
